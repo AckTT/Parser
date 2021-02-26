@@ -1,4 +1,7 @@
-QT -= gui
+QT       += core gui
+
+greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
+
 CONFIG += c++11 console
 CONFIG -= app_bundle
 
@@ -8,6 +11,7 @@ CONFIG -= app_bundle
 
 SOURCES += \
         main.cpp \
+        mainwindow.cpp \
         parseapp.cpp
 
 TRANSLATIONS += \
@@ -19,4 +23,5 @@ else: unix:!android: target.path = /opt/$${TARGET}/bin
 !isEmpty(target.path): INSTALLS += target
 
 HEADERS += \
+    mainwindow.h \
     parseapp.h
