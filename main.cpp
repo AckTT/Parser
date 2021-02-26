@@ -1,11 +1,13 @@
 #include <QCoreApplication>
 #include "parseapp.h"
+#include "mainwindow.h"
 
 int main(int argc, char *argv[])
 {
-    PARSE::ParseApp a(argc, argv);
+    PARSER::ParseApp a(argc, argv);
 
-
+    PARSER::MainWindow w;
+    w.show();
 
     return a.exec();
 }
