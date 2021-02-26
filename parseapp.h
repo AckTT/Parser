@@ -1,10 +1,10 @@
 #ifndef PARSEAPP_H
 #define PARSEAPP_H
 
-#include <QCoreApplication>
+#include <QApplication>
 
-namespace PARSE {
-    class ParseApp : public QCoreApplication {
+namespace PARSER {
+    class ParseApp : public QApplication {
     public:
         ParseApp(int, char**);
         virtual ~ParseApp();
