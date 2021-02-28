@@ -12,6 +12,7 @@ CONFIG -= app_bundle
 SOURCES += \
         main.cpp \
         mainwindow.cpp \
+        model.cpp \
         parseapp.cpp
 
 TRANSLATIONS += \
@@ -24,4 +25,5 @@ else: unix:!android: target.path = /opt/$${TARGET}/bin
 
 HEADERS += \
     mainwindow.h \
+    model.h \
     parseapp.h
