@@ -5,6 +5,8 @@
 #include <QTableView>
 #include <QStandardItemModel>
 
+#include "model.h"
+
 #define WIN_TITLE "Parser"
 
 namespace PARSER {
@@ -23,10 +25,14 @@ private:
     void Table();
     void Connections();
 
+    QString fileName;
+    QString separator;
+
     QToolBar *m_toolBar;
 
     QAction *action_import;
     QAction *action_export;
+    QAction *action_changeSep;
     QAction *action_exit;
 
     QTableView *view;
@@ -37,6 +43,7 @@ private:
 private slots:
     void slot_actionImport();
     void slot_actionExport();
+    void slot_actionChangeSep();
 };
 
 } //PARSER
